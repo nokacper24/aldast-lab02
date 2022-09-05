@@ -55,8 +55,22 @@ public class Sequence {
         this.length--;
     }
 
-    public void search(int item) {
-        // TODO
+    /**
+     * Returns the index of the element found, if multiple instances returns index of first one.
+     * If element does not exist, returns -1.
+     *
+     * @param elem to be found
+     * @return index of elem, -1 if no elem in Sequence
+     */
+    public int lookup(int elem) {
+        int i = 0;
+        while (i < this.length) {
+            if (elem == this.array[i]) {
+                return i;
+            }
+            i++;
+        }
+        return -1;
     }
 
 }
