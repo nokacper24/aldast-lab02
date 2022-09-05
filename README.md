@@ -12,6 +12,7 @@ Insertion
 public void insert(int item) {  
     if (this.length == this.capacity) {  
         this.capacity *= 2;  
+        // shorthand version of a for loop ( also more efficient )
         this.array = Arrays.copyOf(this.array, this.capacity);  
     }  
     this.array[this.length] = item;  
@@ -33,9 +34,10 @@ public void remove() {
     }  
 }
 ```
+<div style="page-break-after: always;"></div>
 
 ### Q1.3
-Lookup
+Lookup  
 ``` java
 public int lookup(int elem) {  
     int i = 0;  
