@@ -1,0 +1,24 @@
+# Eclipse
+.classpath
+.project
+.settings/
+ 
+# Intellij
+.idea/
+*.iml
+*.iws
+ 
+# Mac
+.DS_Store
+ 
+# Maven
+log/
+target/
+
+# Ghostwriter
+*.md.backup
+
+# other
+testArmyFile.csv
+notes.md
+.obsidian/
