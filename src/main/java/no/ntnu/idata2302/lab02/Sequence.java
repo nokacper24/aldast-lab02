@@ -46,13 +46,14 @@ public class Sequence {
      * If the array is less then or equal to 25% full, we shrink the array by half
      */
     public void remove() {
+        // remove the last element of the array
+        this.array[this.length - 1] = 0;
+        this.length--;
+
         if (this.length <= this.capacity / 4) {
             this.capacity /= 2;
             this.array = Arrays.copyOf(this.array, this.capacity);
         }
-        // remove the last element of the array
-        this.array[this.length - 1] = 0;
-        this.length--;
     }
 
     public void search(int item) {
