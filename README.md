@@ -52,8 +52,8 @@ public int lookup(int elem) {
 $n^3$  
 $1.8^n$  
 $3^n$  
-$n(log{_2}{n})^2$  
-$log{_2}{n}$  
+$n(log{_2}{\ n})^2$  
+$log{_2}{\ n}$  
 $n$  
 $\sqrt{n}$  
 $n^2$
