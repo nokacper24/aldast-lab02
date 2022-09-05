@@ -1,13 +1,11 @@
 # ALDAST lab 02
 Github fork used for this assignment: [repository](https://github.com/nokacper24/aldast-lab02)
-
 Contributors: 
 - Kacper Lukasz Nowicki [kacperln@ntnu.no](mailto:kacperln@ntnu.no)
 - Jakob Holkestad Molnes [jakobmo@ntnu.no](mailto:jakobmo@ntnu.no)
 
-## Q1
-### Q1.1
-Insertion
+## Q1 Arrays
+### Q1.1 Insertion
 ``` java
 public void insert(int item) {  
     if (this.length == this.capacity) {  
@@ -20,8 +18,7 @@ public void insert(int item) {
 }
 ```
 
-### Q1.2
-Deletion
+### Q1.2 Deletion
 ``` java
 public void remove() {  
     // remove the last element of the array  
@@ -36,8 +33,7 @@ public void remove() {
 ```
 <div style="page-break-after: always;"></div>
 
-### Q1.3
-Lookup  
+### Q1.3 Lookup
 ``` java
 public int lookup(int elem) {  
     int i = 0;  
@@ -50,3 +46,25 @@ public int lookup(int elem) {
     return -1;  
 }
 ```
+
+## Q2 Runtimes
+### a)
+$n^3$  
+$1.8^n$  
+$3^n$  
+$n(log{_2}{n})^2$  
+$log{_2}{n}$  
+$n$  
+$\sqrt{n}$  
+$n^2$
+
+### b)
+
+## 3 Simultaneous Minimum and Maximum
+### a)
+
+### b)
+
+### c)
+
+## 4 Binary Counter
