@@ -73,7 +73,7 @@ If computers were 1000 times faster, in $3486784401$ time units, it would be abl
 ``` cpp
 Pair findMinMax(sequence) {
 	if (sequence.length < 1) {
-	throw RuntimeException;
+		throw RuntimeException;
 	}
 	
 	int greatest = sequence.get(0);
