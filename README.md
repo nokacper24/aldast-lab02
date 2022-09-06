@@ -49,14 +49,16 @@ public int lookup(int elem) {
 
 ## Q2 Runtimes
 ### a)
-$n^3$  
-$1.8^n$  
-$3^n$  
-$n(log{_2}{\ n})^2$  
-$log{_2}{\ n}$  
-$n$  
-$\sqrt{n}$  
-$n^2$
+1. $log{_2}{\ n}$ - flattens out further out
+2. $\sqrt{n}$ - sublinear polynomial since $\sqrt{n} = n^{1 \over 2}$ 
+3. $n$ - linear growth
+4. $n(log{_2}{\ n})^2$ - 
+5. $n^2$ - quadratic function
+6. $n^3$ - cubic function
+7. $1.8^n$ - expotential growth
+8. $3^n$ - expotential growth with greater base (3 > 1.8)
+
+
 
 ### b)
 
