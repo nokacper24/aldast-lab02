@@ -58,9 +58,14 @@ public int lookup(int elem) {
 7. $1.8^n$ - expotential growth
 8. $3^n$ - expotential growth with greater base (3 > 1.8)
 
-
-
 ### b)
+Functions we choose: $n$ and $3^n$.  
+Today, for problem size of 20, $n$ would take 20 time units.  
+If computers were 1000 times faster, in 20 time units it would be able to compute $n = 20000$.
+
+Today, for problem size of 20, $3^n$. would take $3 ^{20} =3486784401$ time units.  
+If computers were 1000 times faster, in $3486784401$ time units, it would be able to compute $n = 26$.  
+![calculation](/screenshots/2b.png)
 
 ## 3 Simultaneous Minimum and Maximum
 ### a)
