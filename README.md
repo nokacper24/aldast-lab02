@@ -63,12 +63,33 @@ Functions we choose: $n$ and $3^n$.
 Today, for problem size of 20, $n$ would take 20 time units.  
 If computers were 1000 times faster, in 20 time units it would be able to compute $n = 20000$.
 
-Today, for problem size of 20, $3^n$. would take $3 ^{20} =3486784401$ time units.  
+Today, for problem size of 20, $3^n$ would take $3 ^{20} =3486784401$ time units.  
 If computers were 1000 times faster, in $3486784401$ time units, it would be able to compute $n = 26$.  
 ![calculation](/screenshots/2b.png)
 
 ## 3 Simultaneous Minimum and Maximum
 ### a)
+``` cpp
+Pair findMinMax(sequence) {
+	if (sequence.length < 1) {
+	throw RuntimeException;
+	}
+	
+	int greatest = sequence.get(0);
+	int smallest= sequence.get(0);
+	
+	int i = 1;
+	while (i < sequence.length) {
+		if (sequence.get(i) > greatest) {
+			greatest = sequence.get(i);
+		} else if (sequence.get(i) < smallest) {
+			smallest = sequence.get(i)
+		}
+		i++;
+	}
+	return Pair(greatest, smallest)
+}
+```
 
 ### b)
 
