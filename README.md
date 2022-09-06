@@ -65,7 +65,8 @@ If computers were 1000 times faster, in 20 time units it would be able to comput
 
 Today, for problem size of 20, $3^n$. would take $3 ^{20} =3486784401$ time units.  
 If computers were 1000 times faster, in $3486784401$ time units, it would be able to compute $n = 26$.  
-![calculation](/screenshots/2b.png)
+
+![calculation](/screenshots/2b.png)  
 
 ## 3 Simultaneous Minimum and Maximum
 ### a)
