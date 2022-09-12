@@ -107,9 +107,9 @@ Pair findMinMax(sequence) {                        // time units general
 	int i = 1;                                     // 1
 	while (i < sequence.length) {                  // n +1
 		if (sequence.get(i) > greatest) {          // n - 1 + 1 = n
-			greatest = sequence.get(i);            // 2
+			greatest = sequence.get(i);            // 2 ; ignored in worst
 		} else if (sequence.get(i) < smallest) {   // n - 1 + 1 = n
-			smallest = sequence.get(i)             // 2
+			smallest = sequence.get(i)             // 2 ; n*2 in worst case 
 		}
 		i++;                                       // n-1
 	}
@@ -117,7 +117,10 @@ Pair findMinMax(sequence) {                        // time units general
 }
 ```
 
-In the worst case, the first if statement will return false, and the second true
+In the worst case, the first if statement will return false, and the second true.  
+the total runtime for the worst case would be  
+$2+2+2+1+n+1+n+n+2*n+n-1 = 6*n + 7$  
+in the worst case: $time(n) = 6*n + 7$
 
 ### c)
 
