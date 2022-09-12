@@ -98,7 +98,7 @@ We ignore return statement, since every algorithm will do it.
 ``` java
 Pair findMinMax(sequence) {                        // time units general
 	if (sequence.length < 1) {                     // 1+1
-		throw RuntimeException;                    // 
+		throw RuntimeException;                    // 1 ; only if true
 	}
 	
 	int greatest = sequence.get(0);                // 1+1
@@ -129,4 +129,5 @@ worst: {5,4,3,2,1}
 best: {1,1,1,1,1}
 
 ## 4 Binary Counter
+
 
