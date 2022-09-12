@@ -120,8 +120,13 @@ Pair findMinMax(sequence) {                        // time units general
 In the worst case, the first if statement will return false, and the second true.  
 the total runtime for the worst case would be  
 $2+2+2+1+n+1+n+n+2*n+n-1 = 6*n + 7$  
-in the worst case: $time(n) = 6*n + 7$
+in the worst case: $time(n) = 6*n + 7$  
+
+In the worst case we compere twice, 2n.
 
 ### c)
+worst: {5,4,3,2,1}  
+best: {1,1,1,1,1}
 
 ## 4 Binary Counter
+
