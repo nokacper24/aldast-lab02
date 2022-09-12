@@ -93,6 +93,31 @@ Pair findMinMax(sequence) {
 ```
 
 ### b)
+We assume that every operation takes 1 unit of time.  
+We ignore return statement, since every algorithm will do it.
+``` java
+Pair findMinMax(sequence) {                        // time units general
+	if (sequence.length < 1) {                     // 1+1
+		throw RuntimeException;                    // 
+	}
+	
+	int greatest = sequence.get(0);                // 1+1
+	int smallest= sequence.get(0);                 // 1+1
+	
+	int i = 1;                                     // 1
+	while (i < sequence.length) {                  // n +1
+		if (sequence.get(i) > greatest) {          // n - 1 + 1 = n
+			greatest = sequence.get(i);            // 2
+		} else if (sequence.get(i) < smallest) {   // n - 1 + 1 = n
+			smallest = sequence.get(i)             // 2
+		}
+		i++;                                       // n-1
+	}
+	return Pair(greatest, smallest)
+}
+```
+
+In the worst case, the first if statement will return false, and the second true
 
 ### c)
 
