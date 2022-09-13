@@ -124,7 +124,8 @@ the total runtime for the worst case would be
 $2+2+2+1+n+1+n+n+2*n+n-1 = 6*n + 7$  
 in the worst case: $time(n) = 6*n + 7$  
 
-In the worst case we compere twice, 2n.
+In the worst case we compere twice, $2n$.  
+required numbr of comparisons: $comparisons(n)=2n$
 
 ### c)
 worst: {5,4,3,2,1}  
