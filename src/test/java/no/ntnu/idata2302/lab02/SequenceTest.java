@@ -9,6 +9,7 @@ package no.ntnu.idata2302.lab02;
 
 
 import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.Test;
 
 
@@ -21,4 +22,10 @@ public class SequenceTest
         assertEquals(0, sequence.getLength());
     }
 
+    @Test
+    public void emptySequenceRemove() {
+        var sequence = new Sequence();
+        assertThrows(RuntimeException.class, () ->
+                sequence.remove());
+    }
 }

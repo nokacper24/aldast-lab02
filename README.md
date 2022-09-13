@@ -21,6 +21,10 @@ public void insert(int item) {
 ### Q1.2 Deletion
 ``` java
 public void remove() {  
+    if (this.length < 1) {  
+        throw new IllegalStateException("cannot remove from empty array");  
+    }  
+      
     // remove the last element of the array  
     this.array[this.length - 1] = 0;  
     this.length--;  

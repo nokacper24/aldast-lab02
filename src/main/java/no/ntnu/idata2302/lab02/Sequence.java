@@ -19,7 +19,7 @@ public class Sequence {
 
     public Sequence() {
         this.capacity = 100;
-        this.length = length;
+        this.length = 0;
         this.array = new int[capacity];
     }
 
@@ -43,9 +43,13 @@ public class Sequence {
     }
 
     /**
-     * If the array is less then or equal to 25% full, we shrink the array by half
+     * If the array is less than or equal to 25% full, we shrink the array by half
      */
     public void remove() {
+        if (this.length < 1) {
+            throw new IllegalStateException("cannot remove from empty array");
+        }
+
         // remove the last element of the array
         this.array[this.length - 1] = 0;
         this.length--;
