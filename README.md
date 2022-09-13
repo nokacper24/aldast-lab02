@@ -1,5 +1,5 @@
 # ALDAST lab 02
-Github fork used for this assignment: [repository](https://github.com/nokacper24/aldast-lab02)
+Github fork used for this assignment: [repository](https://github.com/nokacper24/aldast-lab02)  
 Contributors: 
 - Kacper Lukasz Nowicki [kacperln@ntnu.no](mailto:kacperln@ntnu.no)
 - Jakob Holkestad Molnes [jakobmo@ntnu.no](mailto:jakobmo@ntnu.no)
@@ -68,7 +68,7 @@ If computers were 1000 times faster, in $3486784401$ time units, it would be abl
 
 ![calculation](/screenshots/2b.png)  
 
-## 3 Simultaneous Minimum and Maximum
+## Q3 Simultaneous Minimum and Maximum
 ### a)
 ``` cpp
 Pair findMinMax(sequence) {
@@ -96,22 +96,22 @@ Pair findMinMax(sequence) {
 We assume that every operation takes 1 unit of time.  
 We ignore return statement, since every algorithm will do it.
 ``` java
-Pair findMinMax(sequence) {                        // time units general
-	if (sequence.length < 1) {                     // 1+1
-		throw RuntimeException;                    // 1 ; only if true
+Pair findMinMax(sequence) {                      // time units general
+	if (sequence.length < 1) {                   // 1+1
+		throw RuntimeException;            // 1 ; only if true
 	}
 	
-	int greatest = sequence.get(0);                // 1+1
-	int smallest= sequence.get(0);                 // 1+1
+	int greatest = sequence.get(0);              // 1+1
+	int smallest= sequence.get(0);               // 1+1
 	
-	int i = 1;                                     // 1
-	while (i < sequence.length) {                  // n +1
-		if (sequence.get(i) > greatest) {          // n - 1 + 1 = n
-			greatest = sequence.get(i);            // 2 ; ignored in worst
-		} else if (sequence.get(i) < smallest) {   // n - 1 + 1 = n
-			smallest = sequence.get(i)             // 2 ; n*2 in worst case 
+	int i = 1;                                   // 1
+	while (i < sequence.length) {                // n +1
+		if (sequence.get(i) > greatest) {        // n - 1 + 1 = n
+			greatest = sequence.get(i); // 2 ;ignored in worst
+		} else if (sequence.get(i) < smallest) { // n - 1 + 1 = n
+			smallest = sequence.get(i)     // 2 ; n*2 in worst 
 		}
-		i++;                                       // n-1
+		i++;                                     // n-1
 	}
 	return Pair(greatest, smallest)
 }
@@ -128,6 +128,9 @@ In the worst case we compere twice, 2n.
 worst: {5,4,3,2,1}  
 best: {1,1,1,1,1}
 
-## 4 Binary Counter
+## Q4 Binary Counter
 
-
+![](img/amortized1.jpg)  
+![](img/amortized2.jpg)  
+![](img/amortized3.jpg)  
+We can see that power cost gets amortized to a constant.
