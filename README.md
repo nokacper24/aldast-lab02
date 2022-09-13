@@ -92,6 +92,8 @@ Pair findMinMax(sequence) {
 }
 ```
 
+<div style="page-break-after: always;"></div>
+
 ### b)
 We assume that every operation takes 1 unit of time.  
 We ignore return statement, since every algorithm will do it.
@@ -128,9 +130,12 @@ In the worst case we compere twice, 2n.
 worst: {5,4,3,2,1}  
 best: {1,1,1,1,1}
 
-## Q4 Binary Counter
+<div style="page-break-after: always;"></div>
 
+## Q4 Binary Counter
+Power cost of showing numbers:  
 ![](img/amortized1.jpg)  
+Spikes can be divided and amortized:  
 ![](img/amortized2.jpg)  
 ![](img/amortized3.jpg)  
 We can see that power cost gets amortized to a constant.
