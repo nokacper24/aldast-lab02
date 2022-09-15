@@ -62,6 +62,8 @@ public int lookup(int elem) {
 7. $1.8^n$ - expotential growth
 8. $3^n$ - expotential growth with greater base (3 > 1.8)
 
+We used a graphing tool to viualize and compare the functions.
+
 ### b)
 Functions we choose: $n$ and $3^n$.  
 Today, for problem size of 20, $n$ would take 20 time units.  
